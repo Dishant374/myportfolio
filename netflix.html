@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="netflix.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body {
+            height: 100vh;
+            width: 100wh;
+            margin: 0px;
+            padding: 0px;
+            /* background-image: url(/PROJECTS/marvels-spider-man-3840x2160-11990.jpeg); */
+        }
+
+        .nav {
+            height: 80px;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            margin: 0px;
+            display: flex;
+            /* position: fixed; */
+        }
+        
+        .hero {
+            height: 400px;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .netflix {
+            height: 100%;
+            width: 20%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-left: 100px;
+            background-image: url(netflix.jpg);
+        }
+
+        h1,
+        h5,
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-weight: bolder;
+        }
+
+        .search {
+            margin-left: 300px;
+            margin-top: 25px;
+        }
+
+        button:hover {
+            transform: scale(1.2, 1.2);
+        }
+
+        .hero2 {
+            height: 200px;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        section {
+
+            width: 100%;
+        }
+
+        .madeinkorea {
+            height: 170px;
+            width: 130px;
+            background-color: rgb(183, 18, 18);
+            border-radius: 10px;
+        }
+
+        .onepiece {
+            height: 170px;
+            width: 130px;
+            border-radius: 10px;
+            background-color: rgb(182, 0, 97);
+        }
+
+        .kapilsharma {
+            height: 170px;
+            width: 130px;
+            border-radius: 10px;
+            background-color: rgb(116, 0, 66);
+        }
+
+        .dhurandhar {
+            height: 170px;
+            width: 130px;
+            border-radius: 10px;
+            background-color: rgb(116, 0, 66);
+        }
+
+        .reason {
+            height: 600px;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            flex-wrap: wrap;
+
+
+        }
+
+        .tv {
+            height: 270px;
+            width: 400px;
+
+            background-image: linear-gradient(75deg, blue, black);
+            margin-left: 40px;
+            margin-right: 10px;
+            margin-top: 10px;
+            border-radius: 20px;
+            padding: 10px;
+
+        }
+
+        .download {
+            height: 270px;
+            width: 400px;
+
+            background-image: linear-gradient(75deg, blue, black);
+            margin-top: 10px;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        .watch {
+            height: 270px;
+            width: 400px;
+
+            background-image: linear-gradient(75deg, blue, black);
+            margin-left: 40px;
+            margin-right: 10px;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        .kids {
+            height: 270px;
+            width: 400px;
+            background-image: linear-gradient(75deg, blue, black);
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        .question {
+            height: 740px;
+            width: 100wh;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #one {
+            height: 80px;
+            width: 800px;
+            background-color: gray;
+            padding: 10px;
+            transition-property: all;
+            transition-duration: 0.5s;
+        }
+
+        #two {
+            height: 80px;
+            width: 800px;
+            background-color: gray;
+            padding: 10px;
+            transition-duration: 0.5s;
+        }
+
+        #three {
+            height: 80px;
+            width: 800px;
+            background-color: gray;
+            padding: 10px;
+            transition-duration: 0.5s;
+        }
+
+        #four {
+            height: 80px;
+            width: 800px;
+            background-color: gray;
+            padding: 10px;
+            transition-duration: 0.5s;
+        }
+
+        #five {
+            height: 80px;
+            width: 800px;
+            background-color: gray;
+            padding: 10px;
+            transition-duration: 0.5s;
+        }
+
+        #six {
+            height: 80px;
+            width: 800px;
+            background-color: gray;
+            padding: 10px;
+            transition-duration: 0.5s;
+        }
+
+        #one:hover {
+            transform: scale(1.1, 1.2);
+        }
+
+        #two:hover {
+            transform: scale(1.1, 1.2);
+        }
+
+        #three:hover {
+            transform: scale(1.1, 1.2);
+        }
+
+        #four:hover {
+            transform: scale(1.1, 1.2);
+        }
+
+        #five:hover {
+            transform: scale(1.1, 1.2);
+        }
+
+        #six:hover {
+            transform: scale(1.1, 1.2);
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <div class="nav">
+        <div class="netflix"></div>
+        <div class="search">
+            <select style="background-color: transparent;color: white;">
+                <option value="">English</option>
+                <option value="">Hindi</option>
+            </select>
+            <button style="color: rgb(255, 255, 255);background-color: red;">Sign In</button>
+        </div>
+    </div>
+    <section>
+
+        <div class="hero">
+            <span>
+                <h1>Unlimited movies, shows<br>
+                    and more</h1>
+                <h5>start at 2$. cancel at any time.</h5>
+                <h5>ready to watch? enter your email to create or restart your <br>
+                    membership.</h5>
+            </span>
+            <div class="email">
+                <input type="email" placeholder="Email address">
+                <button style="color: rgb(255, 255, 255);background-color: red;">Get Started ></button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="hero2">
+            <div class="dhurandhar"></div>
+            <div class="madeinkorea"></div>
+            <div class="onepiece"></div>
+            <div class="kapilsharma"></div>
+
+        </div>
+    </section>
+    <section>
+        <div class="reason">
+            <div class="tv">
+                <span>
+                    <h1 style="margin-left: 10px;">Enjoy on your TV</h1>
+                    <h3
+                        style="font-size: 25px;margin-left: 10px;color: white;font-family: Arial, Helvetica, sans-serif;">
+                        Watch on smart TVs. PlayStation, Xbox,
+                        Chromecast, Apple TV, Blu-ray players and
+                        more.
+                    </h3>
+                </span>
+            </div>
+            <div class="download">
+                <h1 style="margin-left: 10px;">Download your shows to watch offline</h1>
+                <h3 style="font-size: 25px;margin-left: 10px;color: white;font-family: Arial, Helvetica, sans-serif;">
+                    Save your favourites easily and always have
+                </h3>
+            </div>
+            <div class="watch">
+                <h1>Watch everywhere</h1>
+                <h2>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h2>
+            </div>
+            <div class="kids">
+                <h1>Create profiles for kids</h1>
+                <h2>Send kids on adventures with their favourite characters in a space made just for them — free with
+                    your membership.</h2>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="question">
+
+
+
+            <div id="one">
+                <h1>what is netflix?</h1>
+                <div>+</div>
+            </div>
+            <div id="two">
+                <h1>how much does netflix cost?</h1>
+            </div>
+            <div id="three">
+                <h1>where can i watch?</h1>
+            </div>
+            <div id="four">
+                <h1>how do i cancel?</h1>
+            </div>
+            <div id="five">
+                <h1>what can i watch on netflix?</h1>
+            </div>
+            <div id="six">
+                <h1>is netflix goods for kids?</h1>
+            </div>
+            <span style="font-size: 20PX;color: white;font-family: Arial, Helvetica, sans-serif;padding: 10px;">Ready to
+                watch? Enter your email to create or restart your membership.</span>
+            <div class="email">
+                <input type="email" placeholder="Email address"
+                    style="height: 50px;width: 450px;background-color: transparent;">
+                <button style="color: rgb(255, 255, 255);background-color: red;height: 50px;width: 150px;">Get Started
+                    ></button>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
